@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GOR Insulin Infusion Policy Reference</title>
+  <style>
+    :root { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body { margin: 0; padding: 16px; background: #f6f7f9; }
+    .card { max-width: 780px; margin: 0 auto; background: #fff; border-radius: 14px; padding: 16px; box-shadow: 0 6px 20px rgba(0,0,0,.06); }
+    h1 { font-size: 18px; margin: 0 0 8px; }
+    .sub { font-size: 12px; color: #555; margin: 0 0 14px; line-height: 1.4; }
+
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+
+    .warn { font-size: 12px; color: #7c2d12; background: #fff7ed; border: 1px solid #fed7aa; padding: 10px; border-radius: 12px; margin-top: 12px; line-height: 1.35; }
+    .pill { display:inline-block; padding:2px 8px; border-radius: 999px; background:#e5e7eb; font-size:12px; }
+
+    .refTitle { margin: 18px 0 8px; font-size: 14px; font-weight: 800; }
+    .refScroll { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .refTable {
+      width: 100%;
+      min-width: 520px;
+      border-collapse: collapse;
+      table-layout: fixed;
+      font-size: 12px;
+      background: #fff;
+    }
+    .refTable th, .refTable td {
+      border: 1px solid #d1d5db;
+      padding: 6px 8px;
+      text-align: center;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+    .refTable thead th { background: #f3f4f6; font-weight: 800; }
+
+    .refBox {
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 12px;
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      color: #111827;
+      font-size: 12px;
+      line-height: 1.45;
+    }
+    .refBox h3 {
+      margin: 0 0 6px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .2px;
+      text-transform: uppercase;
+      color: #374151;
+    }
+    .refBox ol, .refBox ul { margin: 6px 0 0; padding-left: 18px; }
+    .refBox li { margin: 6px 0; }
+
+    @media (max-width: 380px) {
+      .refTable { font-size: 11px; min-width: 560px; }
+      .refTable th, .refTable td { padding: 6px 6px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1>GOR Insulin Infusion — Policy Reference</h1>
+    <p class="sub">
+      Based on institution ICU/IMCU scale rev. 2026. Please refer to the policy guideline for the most up-to-date information.
+    </p>
+
+    <div class="refBox" style="margin-bottom: 14px;">
+      <h3>About this project</h3>
+      <p style="margin: 6px 0 0;">
+        Intraoperative glucose management in the General Operating Rooms is currently variable and provider-driven,
+        with no standardized workflow for recognizing or acting on out-of-range blood glucose values. A root cause
+        analysis identified protocol inaccessibility and cognitive load as key barriers to adherence.
+      </p>
+      <p style="margin: 8px 0 0;">
+        This reference is part of a 15-week quality improvement initiative (Fall 2026) aimed at improving anesthesia
+        provider adherence to the institutional intraoperative glucose management protocol — specifically, initiating
+        protocol-concordant care for blood glucose values <span class="mono">&gt;180 mg/dL</span> and
+        <span class="mono">&lt;100 mg/dL</span> — to reduce intraoperative hypoglycemia and hyperglycemia events
+        among adult non-cardiac surgical patients.
+      </p>
+      <p style="margin: 8px 0 0; color: #6b7280; font-style: italic;">
+        Improving Adherence to Intraoperative Glucose Management Using Visual Reminders — GOR QI Initiative, 2026.
+      </p>
+    </div>
+
+    <div class="warn">
+      For clinical reference only. Always consult the current institutional policy for authoritative guidance.
+      <span class="pill">Version v0.4</span>
+    </div>
+
+    <div class="refTitle">Glucose targets &amp; when to use insulin infusion</div>
+    <div class="refBox">
+      <h3>Targets</h3>
+      <ul>
+        <li>
+          ADA target range: <span class="mono">80–180 mg/dL</span>. Many clinicians prefer the upper end
+          (<span class="mono">140–180 mg/dL</span>) under anesthesia to reduce hypoglycemia risk.
+        </li>
+        <li>
+          Use <span class="mono">IV regular insulin</span> for all intraoperative correction — subcutaneous
+          absorption is unreliable under anesthesia.
+        </li>
+      </ul>
+      <h3 style="margin-top:10px;">Preoperative glucose thresholds</h3>
+      <ul>
+        <li>
+          BG <span class="mono">&gt;180 mg/dL</span>: must be <strong>treated or rechecked within 90 minutes</strong>.
+        </li>
+        <li>
+          BG <span class="mono">&lt;100 mg/dL</span>: must be <strong>treated or rechecked within 90 minutes</strong>.
+        </li>
+      </ul>
+      <h3 style="margin-top:10px;">IV bolus sliding scale</h3>
+      <ul>
+        <li>Appropriate for <em>shorter procedures</em> requiring correction of hyperglycemia.</li>
+        <li>
+          <strong>Not appropriate</strong> for: Type 1 diabetes, labile glucose, or frequent hypoglycemia.
+          Patients with significant insulin resistance should generally be managed with a continuous infusion.
+        </li>
+      </ul>
+      <h3 style="margin-top:10px;">When to start an infusion</h3>
+      <ul>
+        <li><span class="mono">3 consecutive BG readings &gt;180 mg/dL</span>, OR</li>
+        <li><span class="mono">2 consecutive BG readings &gt;200 mg/dL</span></li>
+        <li>Strongly recommended for refractory hyperglycemia and/or prolonged, physiologically stressful surgery.</li>
+        <li>
+          Special considerations:
+          <ul>
+            <li>Prime tubing with <span class="mono">≥25 mL</span> of insulin from the bag before initiating, unless using low-sorbing tubing.</li>
+            <li>Patients with severe renal dysfunction may have impaired insulin clearance — consider starting lower and titrating more slowly.</li>
+            <li>Monitor electrolytes/blood gas periodically when correcting significant hyperglycemia; potassium repletion may be required.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="refTitle">Hypoglycemia recognition &amp; treatment</div>
+    <div class="refBox">
+      <h3>Recognition</h3>
+      <ul>
+        <li>
+          Hypoglycemia is difficult to detect in anesthetized patients. Suspect it with unexplained
+          <span class="mono">diaphoresis</span>, <span class="mono">arrhythmias</span>, or other cardiac events. Vigilant glucose monitoring is the primary defense.
+        </li>
+        <li>
+          In Type 1 (insulin-dependent) diabetics, do <strong>not</strong> disrupt basal insulin — this risks ketoacidosis.
+          If glucose trends down, initiate a dextrose infusion rather than holding basal.
+        </li>
+      </ul>
+      <h3 style="margin-top:10px;">Treatment (&lt;70 mg/dL)</h3>
+      <ul>
+        <li>
+          Treat with IV dextrose:
+          <ul>
+            <li><span class="mono">12.5–25 g IV dextrose</span> (25–50 mL of D50W), OR</li>
+            <li><span class="mono">D10 125 mL IV bolus</span>, or dextrose equivalent per pharmacy</li>
+          </ul>
+        </li>
+        <li>Recheck BG every <span class="mono">15 minutes</span>; repeat intervention until BG <span class="mono">&gt;70 mg/dL</span>.</li>
+        <li>Consider initiating or increasing a dextrose infusion for persistent hypoglycemia.</li>
+      </ul>
+    </div>
+
+    <div class="refTitle">Titration rules</div>
+    <div class="refBox">
+      <h3>Titration</h3>
+      <ol>
+        <li>
+          Use the titration table to find the starting rate based on the patient's blood glucose value and scale.
+          If the patient's glucose is greater than <span class="mono">390 mg/dL</span>, consult the provider to determine desired interventions and starting point on the titration scale.
+        </li>
+        <li>
+          Move between scales A, B, and C as follows:
+          <ul>
+            <li><span class="mono">Two consecutive BG readings &gt;150 mg/dL</span> on the same scale: increase to next scale (A → B → C)</li>
+            <li><span class="mono">BG &lt;120 mg/dL</span>: decrease to next scale (C → B → A)</li>
+          </ul>
+        </li>
+        <li>
+          If patient made <span class="mono">NPO</span> OR blood glucose decreases by <span class="mono">&gt;100 mg/dL</span> in 1 hour:
+          decrease insulin drip by <span class="mono">50%</span> and notify provider.
+        </li>
+        <li>
+          If blood glucose values are within desired range <span class="mono">(100–180 mg/dL)</span> for <span class="mono">2 hours</span>,
+          then blood glucose can be checked every <span class="mono">2 hours</span>.
+          Return to every <span class="mono">1 hour</span> checks if blood glucose is out of goal range
+          (<span class="mono">&lt;100 mg/dL</span> or <span class="mono">&gt;180 mg/dL</span>).
+        </li>
+      </ol>
+    </div>
+
+    <div class="refTitle">Insulin titration scale table</div>
+    <div class="refScroll">
+      <table class="refTable" aria-label="Insulin titration scale reference">
+        <thead>
+          <tr>
+            <th colspan="2">Scale A</th>
+            <th colspan="2">Scale B</th>
+            <th colspan="2">Scale C</th>
+          </tr>
+          <tr>
+            <th>BG</th><th>Units/hr</th>
+            <th>BG</th><th>Units/hr</th>
+            <th>BG</th><th>Units/hr</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>80–99</td><td>0</td><td>80–99</td><td>0</td><td>80–99</td><td>0</td></tr>
+          <tr><td>100–104</td><td>1</td><td>100–112</td><td>2</td><td>100–104</td><td>2</td></tr>
+          <tr><td>105–121</td><td>2</td><td>112–123</td><td>3</td><td>105–114</td><td>3</td></tr>
+          <tr><td>122–138</td><td>3</td><td>124–136</td><td>4</td><td>115–124</td><td>4</td></tr>
+          <tr><td>139–154</td><td>4</td><td>137–148</td><td>5</td><td>125–134</td><td>5</td></tr>
+          <tr><td>155–171</td><td>5</td><td>149–161</td><td>6</td><td>135–144</td><td>6</td></tr>
+          <tr><td>172–188</td><td>6</td><td>162–173</td><td>7</td><td>145–154</td><td>7</td></tr>
+          <tr><td>189–204</td><td>7</td><td>174–186</td><td>8</td><td>155–164</td><td>8</td></tr>
+          <tr><td>205–221</td><td>8</td><td>187–198</td><td>9</td><td>165–174</td><td>9</td></tr>
+          <tr><td>222–238</td><td>9</td><td>199–211</td><td>10</td><td>175–184</td><td>10</td></tr>
+          <tr><td>239–254</td><td>10</td><td>212–223</td><td>11</td><td>185–194</td><td>11</td></tr>
+          <tr><td>255–271</td><td>11</td><td>224–236</td><td>12</td><td>195–204</td><td>12</td></tr>
+          <tr><td>272–288</td><td>12</td><td>237–248</td><td>13</td><td>205–214</td><td>13</td></tr>
+          <tr><td>289–304</td><td>13</td><td>249–261</td><td>14</td><td>215–224</td><td>14</td></tr>
+          <tr><td>305–321</td><td>14</td><td>262–273</td><td>15</td><td>225–234</td><td>15</td></tr>
+          <tr><td>322–338</td><td>15</td><td>274–286</td><td>16</td><td>235–244</td><td>16</td></tr>
+          <tr><td>339–354</td><td>16</td><td>287–298</td><td>17</td><td>245–254</td><td>17</td></tr>
+          <tr><td>355–371</td><td>17</td><td>299–311</td><td>18</td><td>255–264</td><td>18</td></tr>
+          <tr><td>372–388</td><td>18</td><td>312–323</td><td>19</td><td>265–274</td><td>19</td></tr>
+          <tr><td>389–399</td><td>19</td><td>324–336</td><td>20</td><td>275–284</td><td>20</td></tr>
+          <tr><td></td><td></td><td>337–348</td><td>21</td><td>285–294</td><td>21</td></tr>
+          <tr><td></td><td></td><td>349–361</td><td>22</td><td>295–304</td><td>22</td></tr>
+          <tr><td></td><td></td><td>362–373</td><td>23</td><td>305–314</td><td>23</td></tr>
+          <tr><td></td><td></td><td>374–386</td><td>24</td><td>315–324</td><td>24</td></tr>
+          <tr><td></td><td></td><td>387–390</td><td>25</td><td>325–334</td><td>25</td></tr>
+          <tr><td></td><td></td><td></td><td></td><td>334–345</td><td>26</td></tr>
+          <tr><td></td><td></td><td></td><td></td><td>345–354</td><td>27</td></tr>
+          <tr><td></td><td></td><td></td><td></td><td>355–364</td><td>28</td></tr>
+          <tr><td></td><td></td><td></td><td></td><td>365–374</td><td>29</td></tr>
+          <tr><td></td><td></td><td></td><td></td><td>375–384</td><td>30</td></tr>
+          <tr><td></td><td></td><td></td><td></td><td>385–390</td><td>31</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="refTitle">Hold and hypoglycemia guidance</div>
+    <div class="refBox">
+      <h3>Hold and hypoglycemia</h3>
+      <ul>
+        <li>
+          For any blood glucose <span class="mono">&lt;90 mg/dL</span>, hold infusion and recheck blood glucose in <span class="mono">30 minutes</span> then every <span class="mono">1 hour</span> for <span class="mono">4 hours</span>.
+          Restart insulin drip on <span class="mono">Scale A</span> if blood glucose is <span class="mono">&gt;150 mg/dL</span> during that time.
+        </li>
+        <li>
+          For any blood glucose <span class="mono">70 to 80 mg/dL</span>, hold infusion, notify provider, and recheck blood glucose in <span class="mono">30 minutes</span> then every <span class="mono">1 hour</span> for <span class="mono">4 hours</span>.
+          Restart insulin drip on <span class="mono">Scale A</span> if blood glucose is <span class="mono">&gt;150 mg/dL</span> during that time.
+        </li>
+        <li>
+          For any blood glucose <span class="mono">&lt;70 mg/dL</span>, immediately stop insulin infusion and initiate hypoglycemia management.
+          Notify provider of the hypoglycemia, wait until <span class="mono">4 hours</span> have elapsed after hypoglycemic episode (<span class="mono">&lt;70 mg/dL</span>) then follow the insulin infusion initiation guidance in section B.1 of the policy.
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+</html>
